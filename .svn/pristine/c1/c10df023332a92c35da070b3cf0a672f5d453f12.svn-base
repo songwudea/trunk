@@ -1,0 +1,135 @@
+<%@ page contentType="text/html; charset=utf-8"%>
+<%@ include file="/common/jspHead.jsp" %>
+<head>
+<title>我的购物袋</title>
+<meta name="decorator" content="${current_site.template.path}" />
+</head>
+
+<div id="warpper">
+<div id="login">
+<div class="logo"><a href="${ctx==""?"/":ctx}"><img src="${path}/images/logo.png" width="292" height="108" /></a></div>
+<p><%@ include file="/common/formMessage.jsp" %></p>
+
+	<div class="flow_step_no1 flow_cart">
+		<div class="flow_step">
+			<ol class="cols3">
+				<li class="step_1">我的购物袋</li>
+				<li class="step_2">核对订单</li>
+				<li class="step_3">订单提交成功</li>
+			</ol>
+		</div>
+	</div>
+
+<table width="100%" class="simpleTable">
+	<tr class="th">
+		<td>商品</td>
+		<td align="right">单价</td>
+		<td>数量</td>
+		<td>优惠</td>
+		<td align="right">小计（元）</td>
+		<td> </td>
+	</tr>
+	<c:set var="total" scope="page">0</c:set> 
+	<c:forEach var="item" items="${cartList}" varStatus="state">
+	<tr>
+		<td><input name="itemId" type="hidden" value="${item.itemId}">${item.name}</td>
+		<td align="right"><fmt:formatNumber value="${item.price/100}" pattern="#,##0.00" /></td>
+		<td><a href="#" class="minus">-</a><input name="qty" type="text" value="${item.qty}" size="2" style="text-align:center"/><a href="#" class="plus">+</a></td>
+		<td><c:if test="${item.purchasingType eq 'NORMAL'}">无</c:if>  </td>
+		<td align="right">
+		<span><fmt:formatNumber value="${item.amount/100}" pattern="#,##0.00" /></span>
+		<c:set var="total" scope="page">${item.amount + total}</c:set> 
+		</td>
+		<td align="center"><a href="${ctx}/cart/del?itemId=${item.itemId}">删除</a></td>
+	</tr>
+	</c:forEach>
+	<tr>
+		<td></td>
+		<td></td>
+		<td></td>
+		<td align="right">合计：</td>
+		<td align="right"><span id="sum"><fmt:formatNumber value="${total/100}" pattern="#,##0.00" /></span></td>
+		<td></td>
+	</tr>
+
+</table>
+<div style="width:785px;margin: 0px auto;text-align: right;padding: 10px">
+	<form action="${ctx}/pay/settleaccount.html">
+		<a href="${ctx}/eyes/heiyanquan.html">继续购物 &#187;</a> <a id="check" href="javascript:;" onclick="document.forms[0].submit()"></a>
+	</form>
+
+</div>
+
+
+</div>
+</div>
+
+<script>
+		$(".plus").click(function(){ 
+			var itemId = $(this).closest("tr").find(":hidden[name=itemId]").val();
+	
+			var q = $(this).prev();
+			var qty = q.val();
+			qty = parseInt(qty) + 1;
+			
+			$.post('${ctx}/cart/ajax/qty',{itemId: itemId,qty: qty},function(data){
+				eval("var x = "+data);
+				q.val(x.qty);
+				q.closest("tr").find("span").html(x.amount);
+				$("#sum").html(x.sum);
+        	});
+        	return false;
+		})
+		$(".minus").click(function(){ 
+			var itemId = $(this).closest("tr").find(":hidden[name=itemId]").val();
+			var q = $(this).next();
+			var qty = q.val();
+			if(qty > 1) {
+				qty = parseInt(qty) - 1;
+			}
+			$.post('${ctx}/cart/ajax/qty',{itemId: itemId,qty: qty},function(data){
+				eval("var x = "+data);
+				q.val(x.qty);
+				q.closest("tr").find("span").html(x.amount);
+				$("#sum").html(x.sum);
+        	});
+        	return false;
+		})
+		$("INPUT:text[name=qty]").blur(function(){ 
+			var itemId = $(this).closest("tr").find(":hidden[name=itemId]").val();
+			var q = $(this);
+			var qty = q.val();
+			if(isNaN(qty)) {
+				q.val("1");
+			} else {
+				q.val(parseInt(qty));
+			}
+			$.post('${ctx}/cart/ajax/qty',{itemId: itemId,qty: qty},function(data){
+				eval("var x = "+data);
+				q.val(x.qty);
+				q.closest("tr").find("span").html(x.amount);
+				$("#sum").html(x.sum);
+        	});
+		})
+</script>
+
+
+<script>
+var _BBLRSID = "<c:if test="${USER_EMAIL == null}">Guest</c:if><c:if test="${USER_EMAIL != null}">${USER_EMAIL}</c:if>"; 
+var _BBLRType = "购物车"; 
+var _BBLRAmount = "<fmt:formatNumber value="${total/100}" pattern="#,##0.00" />"; 
+var _BBLRCurrency = "CNY"; 
+
+var _BBLRItems = [];
+<c:forEach var="item" items="${cartList}" varStatus="state">
+_BBLRItems.push(["${item.name}","${item.qty}","${item.price/100}","1","0"]);
+</c:forEach>
+
+
+
+_hmt.push(['Cart', 1, 'amount', "<fmt:formatNumber value="${total/100}" pattern="#,##0.00" />", 2]);
+_hmt.push(['Cart', 1, 'user', "<c:if test="${USER_EMAIL == null}">Guest</c:if><c:if test="${USER_EMAIL != null}">${USER_EMAIL}</c:if>", 2]);
+</script>
+
+
+

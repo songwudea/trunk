@@ -1,0 +1,47 @@
+#为空表示当前域
+image.domain = 
+#存储目录
+image.savepath  = D:\\workspace\\ltxstore\\uploadFile1
+#前缀目录细分程度，默认2，设定后不可修改
+image.prefix = 2
+#图片显示最大宽度
+image.maxwidth = 1100
+#缓存缩略图
+image.savethumb = true
+
+
+#lucene索引位置
+lucene.indexpath = D:\\javaWork\\babailiren\\tonghua\\uploadFile1
+
+##########--------------------支付宝--------------------##########
+#对方地址
+zfb_pay_url = https://www.alipay.com/cooperate/gateway.do?
+#页面返回地址
+zfb_return_url = 
+#后台返回地址
+zfb_notify_url = 
+zfb_query_url = http://notify.alipay.com/trade/notify_query.do?
+#快速付款交易服务
+zfb_service = create_direct_pay_by_user
+#快速查询交易服务
+zfb_query_service = single_trade_query
+#支付宝合作伙伴id (账户内提取)
+zfb_partner = 
+#支付宝安全校验码(账户内提取)
+zfb_key = 
+#卖家支付宝帐户
+zfb_email = 
+#支付宝类型.1代表商品购买
+zfb_payment_type = 1
+#加密方式
+zfb_sign_type = MD5
+#编码方式
+zfb_input_charset = GBK
+#系统域名
+zfb_show_url = 
+#支付宝登陆返回
+zfb_web_return_url = 
+#支付宝提供给商户的服务接入网关URL(新)
+zfb_web_query_url = https://mapi.alipay.com/gateway.do?
+zfb_transport = http
+zfb_web_input_charset = UTF-8

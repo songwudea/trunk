@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="person" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>sem</display-name>
+
+	<context-param>  
+	    <param-name>webAppRootKey</param-name>  
+	    <param-value>  
+	        ec.root  
+	    </param-value>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:spring/spring-main.xml</param-value>
+	</context-param>
+
+
+	<!-- Character Encoding filter -->
+	<filter>
+		<filter-name>encodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<filter>
+		<filter-name>right</filter-name>
+		<filter-class>com.babailiren.ec.web.filter.BackFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>right</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>
+
+
+
+<!-- gzip Filter -->
+<!-- 
+	<filter>
+		<filter-name>CompressingFilter</filter-name>
+		<filter-class>com.planetj.servlet.filter.compression.CompressingFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>CompressingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+ -->
+
+
+	<filter>
+	  <filter-name>sitemesh</filter-name>
+	  <filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>
+	</filter>
+	 
+	<filter-mapping>
+	  <filter-name>sitemesh</filter-name>
+	  <url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>themesSourceFilter</filter-name>
+		<filter-class>com.babailiren.ec.web.filter.ThemesSourceFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>themesSourceFilter</filter-name>
+		<url-pattern>/themes/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>siteForwardFilter</filter-name>
+		<filter-class>com.babailiren.ec.web.filter.SiteForwardFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>siteForwardFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>authenticateFilter</filter-name>
+		<filter-class>com.babailiren.ec.web.filter.AuthenticateFilter</filter-class>
+	</filter>
+
+	
+	<filter-mapping>
+		<filter-name>authenticateFilter</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>
+
+	<!-- initializer -->
+	<servlet>
+		<servlet-name>initServlet</servlet-name>
+		<servlet-class>com.babailiren.ec.web.servlet.InitServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>springmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>springmvc</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>captcha</servlet-name>
+		<!--
+			servlet-class>com.octo.captcha.module.servlet.image.SimpleImageCaptchaServlet</servlet-class
+		-->
+		<servlet-class>com.babailiren.ec.web.servlet.CheckImage</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>captcha</servlet-name>
+		<url-pattern>/captcha.jpg</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>*.css,*.gif,*.jpg,*.png,*.js</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+
+	<listener>  
+        <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>  
+    </listener>  
+
+	<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<listener>
+		<listener-class>org.springframework.web.util.IntrospectorCleanupListener</listener-class>
+	</listener>
+
+	<session-config>
+		<session-timeout>20</session-timeout>
+	</session-config>
+
+	<error-page>
+		<error-code>500</error-code>
+		<location>/errors/500.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/errors/404.jsp</location>
+	</error-page>
+	<jsp-config> 
+		<taglib>
+			<taglib-uri>oscache</taglib-uri>
+			<taglib-location>/WEB-INF/classes/oscache.tld</taglib-location>
+		</taglib>
+	</jsp-config>
+</web-app>
+

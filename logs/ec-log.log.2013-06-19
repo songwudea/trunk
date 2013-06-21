@@ -1,0 +1,387 @@
+2013-06-19 11:18:55,126 [main] INFO  pringframework.web.context.ContextLoader -Root WebApplicationContext: initialization started
+2013-06-19 11:18:55,398 [main] INFO  context.support.XmlWebApplicationContext -Refreshing Root WebApplicationContext: startup date [Wed Jun 19 11:18:55 CST 2013]; root of context hierarchy
+2013-06-19 11:18:55,520 [main] INFO  eans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring/spring-main.xml]
+2013-06-19 11:18:56,358 [main] INFO  eans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring/spring-manager.xml]
+2013-06-19 11:18:56,952 [main] INFO  eans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring/spring-repository.xml]
+2013-06-19 11:18:57,233 [main] INFO  eans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring/spring-mail.xml]
+2013-06-19 11:18:57,264 [main] INFO  eans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring/spring-task.xml]
+2013-06-19 11:18:57,311 [main] INFO  eans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [spring/spring-cache.xml]
+2013-06-19 11:18:58,013 [main] INFO  ory.config.PropertyPlaceholderConfigurer -Loading properties file from class path resource [init.properties]
+2013-06-19 11:18:58,045 [main] INFO  ory.config.PropertyPlaceholderConfigurer -Loading properties file from class path resource [mail.properties]
+2013-06-19 11:18:58,186 [main] INFO  ctory.support.DefaultListableBeanFactory -Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@459efb: defining beans [org.springframework.beans.factory.config.PropertyPlaceholderConfigurer#0,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,addressService,brandService,cartService,categoryAttributeService,categoryService,commentService,contentService,contentTypeService,dispatchService,employeeRoleService,employeeService,employeeSiteService,filterAttrService,itemAttributeService,itemCustomerAttributeService,itemService,linkService,luceneService,menuService,orderDispatchService,orderPayService,orderService,pagePublishService,priceFilterService,privilegeService,refundService,returnPurchaseService,rolePrivilegeService,roleService,seqService,sitePageConfigService,siteService,templateService,userService,luceneInit,webCache,addressDao,brandDao,cartDao,categoryAttributeDao,categoryDao,cityDao,commentDao,contentDao,contentTypeDao,employeeDao,employeeRoleDao,employeeSiteDao,itemAttributeDao,itemCustomerAttributeDao,itemDao,languageDao,linkDao,menuDao,orderDao,orderDetailDao,orderDispatchDao,orderDispatchDetailDao,orderDownloadDao,orderPayDao,orderSeqDao,pagePublishDao,priceFilterDao,privilegeDao,provinceDao,refundDao,returnPurchaseDao,roleDao,rolePrivilegeDao,siteDao,sitePageConfigDao,templateDao,userDao,userDownloadDao,dataSource,jdbcTemplate,transactionManager,mailSender,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.cache.annotation.AnnotationCacheOperationSource#0,org.springframework.cache.interceptor.CacheInterceptor#0,org.springframework.cache.config.internalCacheAdvisor,cacheManagerFactory,cacheManager,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; root of factory hierarchy
+2013-06-19 11:18:58,279 [main] INFO  com.mchange.v2.log.MLog                  -MLog clients using log4j logging.
+2013-06-19 11:18:58,357 [main] INFO  com.mchange.v2.c3p0.C3P0Registry         -Initializing c3p0-0.9.1.2 [built 21-May-2007 15:04:56; debug? true; trace: 10]
+2013-06-19 11:18:59,652 [main] INFO  .cache.ehcache.EhCacheManagerFactoryBean -Initializing EHCache CacheManager
+2013-06-19 11:19:00,043 [main] INFO  pringframework.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4916 ms
+2013-06-19 11:19:00,729 [main] INFO  2.c3p0.impl.AbstractPoolBackedDataSource -Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 1, acquireRetryAttempts -> 10, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -> 1hge16i8vp3eivq14qffka|f20964, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> 1hge16i8vp3eivq14qffka|f20964, idleConnectionTestPeriod -> 900, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://42.120.45.127:3306/ltxstore?zeroDateTimeBehavior=convertToNull&characterEncoding=utf-8&autoReconnect=true, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 1200, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 5, maxStatements -> 100, maxStatementsPerConnection -> 0, minPoolSize -> 2, numHelperThreads -> 10, numThreadsAwaitingCheckoutDefaultUser -> 0, preferredTestQuery -> null, properties -> {user=******, password=******}, propertyCycle -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false ]
+2013-06-19 11:19:19,435 [main] INFO  gframework.web.servlet.DispatcherServlet -FrameworkServlet 'springmvc': initialization started
+2013-06-19 11:19:19,435 [main] INFO  context.support.XmlWebApplicationContext -Refreshing WebApplicationContext for namespace 'springmvc-servlet': startup date [Wed Jun 19 11:19:19 CST 2013]; parent: Root WebApplicationContext
+2013-06-19 11:19:19,435 [main] INFO  eans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from ServletContext resource [/WEB-INF/springmvc-servlet.xml]
+2013-06-19 11:19:20,231 [main] INFO  ctory.support.DefaultListableBeanFactory -Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@8b9c82: defining beans [org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping#0,org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter#0,actionController,addressController,adminController,backOrderController,backUserController,brandController,categoryController,commentController,contentController,contentTypeController,employeeController,indexPublishController,itemController,linkController,menuController,orderDispatchController,orderPayController,priceFilterController,privilegeController,refundController,roleController,senderPmController,siteController,templateController,uploadController,cartController,commentsController,indexController,newsController,orderController,partialController,payController,productController,renderController,thirdpartLoginController,thirdpartLoginControllerTest,userAddressController,userController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,viewResolver,messageSource,multipartResolver,org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.context.annotation.ConfigurationClassPostProcessor$ImportAwareBeanPostProcessor#0]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@459efb
+2013-06-19 11:19:20,278 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/login.html] onto handler 'actionController'
+2013-06-19 11:19:20,278 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/register.html] onto handler 'actionController'
+2013-06-19 11:19:20,294 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/address/list.html] onto handler 'addressController'
+2013-06-19 11:19:20,294 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/address/singleList.html] onto handler 'addressController'
+2013-06-19 11:19:20,294 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/address] onto handler 'addressController'
+2013-06-19 11:19:20,294 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/address.*] onto handler 'addressController'
+2013-06-19 11:19:20,294 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/address/] onto handler 'addressController'
+2013-06-19 11:19:20,309 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/index.html] onto handler 'adminController'
+2013-06-19 11:19:20,309 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/login.html] onto handler 'adminController'
+2013-06-19 11:19:20,309 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/logout.html] onto handler 'adminController'
+2013-06-19 11:19:20,309 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/chooseSite.html] onto handler 'adminController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order/list.html] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order/view.html] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order/createRenderBill.html] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order/orderdetail.html] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order/confirmPay.html] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order/confirmDispath.html] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order/downorder.html] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order.*] onto handler 'backOrderController'
+2013-06-19 11:19:20,372 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/order/] onto handler 'backOrderController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/user/list.html] onto handler 'backUserController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/user/downuser.html] onto handler 'backUserController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/user] onto handler 'backUserController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/user.*] onto handler 'backUserController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/user/] onto handler 'backUserController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/brand/list.html] onto handler 'brandController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/brand/getBrands.html] onto handler 'brandController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/brand/edit.html] onto handler 'brandController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/brand] onto handler 'brandController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/brand.*] onto handler 'brandController'
+2013-06-19 11:19:20,403 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/brand/] onto handler 'brandController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/list.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/categoryAttribute.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/edit.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/editcategorypage.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/childCategory.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/rootCategory.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/doCategoryAttribute.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/categoryView.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/categorybrand.html] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category.*] onto handler 'categoryController'
+2013-06-19 11:19:20,419 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/category/] onto handler 'categoryController'
+2013-06-19 11:19:20,434 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/comment/list.html] onto handler 'commentController'
+2013-06-19 11:19:20,434 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/comment/verify.html] onto handler 'commentController'
+2013-06-19 11:19:20,434 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/comment/hidden.html] onto handler 'commentController'
+2013-06-19 11:19:20,434 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/comment] onto handler 'commentController'
+2013-06-19 11:19:20,434 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/comment.*] onto handler 'commentController'
+2013-06-19 11:19:20,434 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/comment/] onto handler 'commentController'
+2013-06-19 11:19:20,434 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/content/list.html] onto handler 'contentController'
+2013-06-19 11:19:20,450 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/content/delete.html] onto handler 'contentController'
+2013-06-19 11:19:20,450 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/content/edit.html] onto handler 'contentController'
+2013-06-19 11:19:20,450 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/content/list2.html] onto handler 'contentController'
+2013-06-19 11:19:20,450 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/content/list1.html] onto handler 'contentController'
+2013-06-19 11:19:20,450 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/content] onto handler 'contentController'
+2013-06-19 11:19:20,465 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/content.*] onto handler 'contentController'
+2013-06-19 11:19:20,465 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/content/] onto handler 'contentController'
+2013-06-19 11:19:20,465 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/contentType/list.html] onto handler 'contentTypeController'
+2013-06-19 11:19:20,465 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/contentType/edit.html] onto handler 'contentTypeController'
+2013-06-19 11:19:20,465 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/contentType] onto handler 'contentTypeController'
+2013-06-19 11:19:20,465 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/contentType.*] onto handler 'contentTypeController'
+2013-06-19 11:19:20,465 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/contentType/] onto handler 'contentTypeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee/list.html] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee/edit.html] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee/cancelSite.html] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee/assortSite.html] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee/doEmployeerole.html] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee/employeeRole.html] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee/doEdit.html] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee.*] onto handler 'employeeController'
+2013-06-19 11:19:20,498 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/employee/] onto handler 'employeeController'
+2013-06-19 11:19:20,513 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/indexpublish/edit.html] onto handler 'indexPublishController'
+2013-06-19 11:19:20,513 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/indexpublish] onto handler 'indexPublishController'
+2013-06-19 11:19:20,513 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/indexpublish.*] onto handler 'indexPublishController'
+2013-06-19 11:19:20,513 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/indexpublish/] onto handler 'indexPublishController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/list.html] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/edit.html] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/shelves.html] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/deleteItemPic.html] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/deleteItemAttr.html] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/itemattr.html] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/doItemAttr.html] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/itemCustomerAttr.html] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item.*] onto handler 'itemController'
+2013-06-19 11:19:20,544 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/item/] onto handler 'itemController'
+2013-06-19 11:19:20,560 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/link/list.html] onto handler 'linkController'
+2013-06-19 11:19:20,560 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/link/edit.html] onto handler 'linkController'
+2013-06-19 11:19:20,560 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/link] onto handler 'linkController'
+2013-06-19 11:19:20,560 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/link.*] onto handler 'linkController'
+2013-06-19 11:19:20,560 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/link/] onto handler 'linkController'
+2013-06-19 11:19:20,560 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/menu/list.html] onto handler 'menuController'
+2013-06-19 11:19:20,576 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderdispatch/list.html] onto handler 'orderDispatchController'
+2013-06-19 11:19:20,576 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderdispatch/orderdispatchdetail.html] onto handler 'orderDispatchController'
+2013-06-19 11:19:20,576 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderdispatch/view.html] onto handler 'orderDispatchController'
+2013-06-19 11:19:20,576 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderdispatch/edit.html] onto handler 'orderDispatchController'
+2013-06-19 11:19:20,576 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderdispatch/confirmDispatch.html] onto handler 'orderDispatchController'
+2013-06-19 11:19:20,576 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderdispatch] onto handler 'orderDispatchController'
+2013-06-19 11:19:20,576 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderdispatch.*] onto handler 'orderDispatchController'
+2013-06-19 11:19:20,576 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderdispatch/] onto handler 'orderDispatchController'
+2013-06-19 11:19:20,591 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderpay/list.html] onto handler 'orderPayController'
+2013-06-19 11:19:20,591 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderpay/confirmPay.html] onto handler 'orderPayController'
+2013-06-19 11:19:20,591 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderpay] onto handler 'orderPayController'
+2013-06-19 11:19:20,591 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderpay.*] onto handler 'orderPayController'
+2013-06-19 11:19:20,591 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/orderpay/] onto handler 'orderPayController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/price/view.html] onto handler 'priceFilterController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/price/edit.html] onto handler 'priceFilterController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/privilege/list.html] onto handler 'privilegeController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/privilege/delete.html] onto handler 'privilegeController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/privilege/edit.html] onto handler 'privilegeController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/privilege/doEdit.html] onto handler 'privilegeController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/privilege] onto handler 'privilegeController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/privilege.*] onto handler 'privilegeController'
+2013-06-19 11:19:20,607 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/privilege/] onto handler 'privilegeController'
+2013-06-19 11:19:20,622 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/refund/list.html] onto handler 'refundController'
+2013-06-19 11:19:20,622 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/refund/comfireRefund.html] onto handler 'refundController'
+2013-06-19 11:19:20,622 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/refund] onto handler 'refundController'
+2013-06-19 11:19:20,622 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/refund.*] onto handler 'refundController'
+2013-06-19 11:19:20,622 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/refund/] onto handler 'refundController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/role/permissions.html] onto handler 'roleController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/role/list.html] onto handler 'roleController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/role/edit.html] onto handler 'roleController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/role/doEdit.html] onto handler 'roleController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/role] onto handler 'roleController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/role.*] onto handler 'roleController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/role/] onto handler 'roleController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/senderpm/sendsms.html] onto handler 'senderPmController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/senderpm/recvsms.html] onto handler 'senderPmController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/senderpm] onto handler 'senderPmController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/senderpm.*] onto handler 'senderPmController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/senderpm/] onto handler 'senderPmController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/site/list.html] onto handler 'siteController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/site/editindexpage.html] onto handler 'siteController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/site] onto handler 'siteController'
+2013-06-19 11:19:20,638 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/site.*] onto handler 'siteController'
+2013-06-19 11:19:20,654 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/site/] onto handler 'siteController'
+2013-06-19 11:19:20,654 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/template/list.html] onto handler 'templateController'
+2013-06-19 11:19:20,654 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/template/configcategory.html] onto handler 'templateController'
+2013-06-19 11:19:20,654 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/template/confighomepage.html] onto handler 'templateController'
+2013-06-19 11:19:20,654 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/template] onto handler 'templateController'
+2013-06-19 11:19:20,654 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/template.*] onto handler 'templateController'
+2013-06-19 11:19:20,654 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/template/] onto handler 'templateController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/upload] onto handler 'uploadController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/upload.*] onto handler 'uploadController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/admin/upload/] onto handler 'uploadController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/add] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/add.*] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/add/] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/ajax/qty] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/ajax/qty.*] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/ajax/qty/] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/del] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/del.*] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/del/] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart.*] onto handler 'cartController'
+2013-06-19 11:19:20,669 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/cart/] onto handler 'cartController'
+2013-06-19 11:19:20,685 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/comments/edit.html] onto handler 'commentsController'
+2013-06-19 11:19:20,685 [main] INFO  notation.DefaultAnnotationHandlerMapping -Root mapping to handler 'indexController'
+2013-06-19 11:19:20,700 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/content/{contentPath}.html] onto handler 'newsController'
+2013-06-19 11:19:20,700 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/content/info/{contentPath}.html] onto handler 'newsController'
+2013-06-19 11:19:20,700 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/content/brand_story.html] onto handler 'newsController'
+2013-06-19 11:19:20,700 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/order/createorder.html] onto handler 'orderController'
+2013-06-19 11:19:20,700 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/orderDetail.html] onto handler 'orderController'
+2013-06-19 11:19:20,700 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/order_{orderNumber}.html] onto handler 'orderController'
+2013-06-19 11:19:20,700 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/order.html] onto handler 'orderController'
+2013-06-19 11:19:20,716 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/part/{part}.html] onto handler 'partialController'
+2013-06-19 11:19:20,716 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/pay/settleaccount.html] onto handler 'payController'
+2013-06-19 11:19:20,716 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/pay/pay_success.html] onto handler 'payController'
+2013-06-19 11:19:20,716 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/pay/alipay_return.html] onto handler 'payController'
+2013-06-19 11:19:20,716 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/pay/alipay_{userOrder}.html] onto handler 'payController'
+2013-06-19 11:19:20,763 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/eyes/{ctgPath}.html] onto handler 'productController'
+2013-06-19 11:19:20,763 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/product/p{itemId}.html] onto handler 'productController'
+2013-06-19 11:19:20,763 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/products/{ctgPath}.html] onto handler 'productController'
+2013-06-19 11:19:20,763 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/product/{urlRewrite}.html] onto handler 'productController'
+2013-06-19 11:19:20,778 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/img/{md5}/{watermark}/{resolution}.{suffix}] onto handler 'renderController'
+2013-06-19 11:19:20,778 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/img/{md5}/{resolution}.{suffix}] onto handler 'renderController'
+2013-06-19 11:19:20,778 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/img/{md5}.{suffix}] onto handler 'renderController'
+2013-06-19 11:19:20,778 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/img/default/{resolution}.jpg] onto handler 'renderController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp/{pathBuild}Login.html] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp/return_url.html] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp/alipayBindLogin.html] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp/sinaLoginAccessToken.html] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp/sinaLoginRegist.html] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp/qqReturn.html] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp/qqLoginRegist.html] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp.*] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,810 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tp/] onto handler 'thirdpartLoginController'
+2013-06-19 11:19:20,841 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tpTest/{pathBuild}Login.html] onto handler 'thirdpartLoginControllerTest'
+2013-06-19 11:19:20,841 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tpTest/{pathBuild}LoginRegist.html] onto handler 'thirdpartLoginControllerTest'
+2013-06-19 11:19:20,841 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tpTest/{pathBuild}Bind.html] onto handler 'thirdpartLoginControllerTest'
+2013-06-19 11:19:20,841 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tpTest] onto handler 'thirdpartLoginControllerTest'
+2013-06-19 11:19:20,841 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tpTest.*] onto handler 'thirdpartLoginControllerTest'
+2013-06-19 11:19:20,841 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/tpTest/] onto handler 'thirdpartLoginControllerTest'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/address/delete.html] onto handler 'userAddressController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/address/getCity.html] onto handler 'userAddressController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/address/edit.html] onto handler 'userAddressController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/address/addAddress.html] onto handler 'userAddressController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/address/setDefAddress.html] onto handler 'userAddressController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/address] onto handler 'userAddressController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/address.*] onto handler 'userAddressController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/address/] onto handler 'userAddressController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/register.html] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/ajax/email] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/ajax/email.*] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/ajax/email/] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/login.html] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/logout.html] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/userOrderDetail.html] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/modifyUser.html] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/demandnote.html] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/regfinished.html] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/ajax/captcha] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/ajax/captcha.*] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/ajax/captcha/] onto handler 'userController'
+2013-06-19 11:19:20,856 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/forget.html] onto handler 'userController'
+2013-06-19 11:19:20,872 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/imgList.html] onto handler 'userController'
+2013-06-19 11:19:20,872 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user] onto handler 'userController'
+2013-06-19 11:19:20,872 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user.*] onto handler 'userController'
+2013-06-19 11:19:20,872 [main] INFO  notation.DefaultAnnotationHandlerMapping -Mapped URL path [/user/] onto handler 'userController'
+2013-06-19 11:19:21,122 [main] INFO  .servlet.handler.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler 'org.springframework.web.servlet.resource.DefaultServletHttpRequestHandler#0'
+2013-06-19 11:19:21,215 [main] INFO  gframework.web.servlet.DispatcherServlet -FrameworkServlet 'springmvc': initialization completed in 1780 ms
+2013-06-19 11:19:52,223 [http-8080-4] ERROR AnnotationMethodHandlerExceptionResolver -Invoking request method resulted in exception : public static native long java.lang.System.currentTimeMillis()
+java.lang.IllegalArgumentException: Invalid handler method return value: 1371611992223
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.getModelAndView(AnnotationMethodHandlerExceptionResolver.java:410)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.doResolveException(AnnotationMethodHandlerExceptionResolver.java:140)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1097)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:921)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:827)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at com.babailiren.ec.web.filter.SiteForwardFilter.doFilter(SiteForwardFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2013-06-19 11:19:52,223 [http-8080-3] ERROR AnnotationMethodHandlerExceptionResolver -Invoking request method resulted in exception : public static native long java.lang.System.currentTimeMillis()
+java.lang.IllegalArgumentException: Invalid handler method return value: 1371611992223
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.getModelAndView(AnnotationMethodHandlerExceptionResolver.java:410)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.doResolveException(AnnotationMethodHandlerExceptionResolver.java:140)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1097)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:921)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:827)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at com.babailiren.ec.web.filter.SiteForwardFilter.doFilter(SiteForwardFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2013-06-19 11:19:52,223 [http-8080-1] ERROR AnnotationMethodHandlerExceptionResolver -Invoking request method resulted in exception : public static native long java.lang.System.currentTimeMillis()
+java.lang.IllegalArgumentException: Invalid handler method return value: 1371611992223
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.getModelAndView(AnnotationMethodHandlerExceptionResolver.java:410)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.doResolveException(AnnotationMethodHandlerExceptionResolver.java:140)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1097)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:921)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:827)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at com.babailiren.ec.web.filter.SiteForwardFilter.doFilter(SiteForwardFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2013-06-19 11:19:52,223 [http-8080-5] ERROR AnnotationMethodHandlerExceptionResolver -Invoking request method resulted in exception : public static native long java.lang.System.currentTimeMillis()
+java.lang.IllegalArgumentException: Invalid handler method return value: 1371611992223
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.getModelAndView(AnnotationMethodHandlerExceptionResolver.java:410)
+	at org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerExceptionResolver.doResolveException(AnnotationMethodHandlerExceptionResolver.java:140)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:136)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1097)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:921)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:827)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:882)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:778)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:617)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:717)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at com.babailiren.ec.web.filter.SiteForwardFilter.doFilter(SiteForwardFilter.java:81)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.obtainContent(SiteMeshFilter.java:129)
+	at com.opensymphony.sitemesh.webapp.SiteMeshFilter.doFilter(SiteMeshFilter.java:77)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:88)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:76)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:235)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:102)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:298)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:857)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:588)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:489)
+	at java.lang.Thread.run(Thread.java:662)
+2013-06-19 17:11:21,914 [http-8080-6] INFO  eans.factory.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2013-06-19 17:11:21,976 [http-8080-6] INFO  mework.jdbc.support.SQLErrorCodesFactory -SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase]
